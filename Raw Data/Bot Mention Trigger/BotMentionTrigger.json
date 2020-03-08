@@ -1,0 +1,91 @@
+{
+  "name": "BotMentionTrigger",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "wJxfe",
+  "actions": [
+    {
+      "comment": "Made by DemirK2#0001",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Website: www.pokenix.com",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Server: https://discord.gg/STcThtu",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "GitHub: https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Bot Maker: 1.5.10 [Beta]",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Network Modifications: 1.9.7",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "Text",
+      "name": "Store Message Info"
+    },
+    {
+      "info": "20",
+      "storage": "1",
+      "varName2": "ID",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "19",
+      "storage": "1",
+      "varName2": "Prefix",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "storage": "1",
+      "varName": "Text",
+      "comparison": "1",
+      "value": "'<@!tempVars(\"ID\")>'",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "Text",
+      "comparison": "1",
+      "value": "'<@!tempVars(\"ID\")> prefix'",
+      "iftrue": "0",
+      "iftrueVal": "1",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "__Pong!__\nMy prefix: **${tempVars(\"Prefix\")}**",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "3"
+}
