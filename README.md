@@ -13,9 +13,10 @@ You can use these in your bots as you want but giving credits to me would be app
 To use the stuff here.
 
 # Useful Links
-1. [DBM Network Modifications](https://github.com/dbm-network/mods)
-2. [My Discord Server](https://discord.gg/STcThtu)
-3. [My Website](https://www.pokenix.com)
+1. [Discord Bot Maker](https://store.steampowered.com/app/682130/Discord_Bot_Maker)
+2. [DBM Network Modifications](https://github.com/dbm-network/mods)
+3. [My Discord Server](https://discord.gg/STcThtu)
+4. [My Website](https://www.pokenix.com)
 
 # Raw Data
 ## Importing Raw Data
