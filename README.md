@@ -4,17 +4,18 @@ You can buy Discord Bot Maker on [Steam](https://store.steampowered.com/app/6821
 
 # Information
 In this repository, you can find some raw data, events, modifications, and extensions which are made by me.
-You can use these in your bots but giving credits to me would be appreciated.
+You can use these in your bots as you want but giving credits to me would be appreciated.
 
 # Versions
-You have to have the Discord Bot Maker which is on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker).
-You have to have the latest (Beta) version of Discord Bot Maker.
-You have to have the latest (Beta) [DBM Network Modifications](https://github.com/dbm-network/mods).
+1. You have to have the Discord Bot Maker which is on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker).
+2. You have to have the latest (Beta) version of Discord Bot Maker.
+3. You have to have the latest (Beta) [DBM Network Modifications](https://github.com/dbm-network/mods).
+To use the stuff here.
 
 # Useful Links
-[DBM Network Modifications](https://github.com/dbm-network/mods)
-[My Discord Server](https://discord.gg/STcThtu)
-[My Website](https://www.pokenix.com)
+1. [DBM Network Modifications](https://github.com/dbm-network/mods)
+2. [My Discord Server](https://discord.gg/STcThtu)
+3. [My Website](https://www.pokenix.com)
 
 # Raw Data
 ## Importing Raw Data
@@ -31,7 +32,7 @@ You have to have the latest (Beta) [DBM Network Modifications](https://github.co
 3. Mark everything and copy it.
 
 # Modifications
-Comig Soon...
+Coming Soon...
 
 # Events
 ## Importing Events (Code)
@@ -56,7 +57,7 @@ Comig Soon...
 3. Right-click to an empty space.
 4. Hover on "New" and click to "Text Document".
 5. Open that text document.
-6. Paste your exntention code.
+6. Paste your extension code.
 6. Save the file.
 7. Change its name and file name extension.
 
