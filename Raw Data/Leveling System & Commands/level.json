@@ -1,0 +1,67 @@
+{
+  "name": "level",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "ZgbRJ",
+  "actions": [
+    {
+      "comment": "Made by DemirK2#0001",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Website: www.pokenix.com",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Server: https://discord.gg/STcThtu",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "GitHub: https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Bot Maker: 1.5.10 [Beta]",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Network Modifications: 1.9.7",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "xp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MemberXP",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MemberLevel",
+      "name": "Store Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "You are level **${tempVars(\"MemberLevel\")}**.\nYou need **${tempVars(\"MemberXP\")}** more XP(s) to level up.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}

@@ -1,0 +1,128 @@
+{
+  "name": "LevelSystem",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "qwAYW",
+  "actions": [
+    {
+      "comment": "Made by DemirK2#0001",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Website: www.pokenix.com",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Server: https://discord.gg/STcThtu",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "GitHub: https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Bot Maker: 1.5.10 [Beta]",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Network Modifications: 1.9.7",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "1 Message = 1 XP",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "comment": "20 XP = 1 Level",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "xp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MemberXP",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MemberLevel",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"MemberXP\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "1",
+      "varName": "MathXP",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "xp",
+      "changeType": "0",
+      "value": "tempVars(\"MathXP\")",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "MathXP",
+      "comparison": "14",
+      "value": "20",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "xp",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"MemberLevel\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "1",
+      "varName": "MathLevel",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "changeType": "0",
+      "value": "tempVars(\"MathLevel\")",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**You leveled up!**\nYou are now level **${tempVars(\"MathLevel\")}**.",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "3"
+}

@@ -1,0 +1,120 @@
+{
+  "name": "addlevel",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "DIezL",
+  "actions": [
+    {
+      "comment": "Made by DemirK2#0001",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Website: www.pokenix.com",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Server: https://discord.gg/STcThtu",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "GitHub: https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Bot Maker: 1.5.10 [Beta]",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Network Modifications: 1.9.7",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "info": "19",
+      "storage": "1",
+      "varName2": "Prefix",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "__**Error:**__\n```\nWrong Command Usage!\n${tempVars(\"Prefix\")}addlevel (@User) (Amount)\n```",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "2",
+      "iffalseVal": "9",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "Amount",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "MemberLevel",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"MemberLevel\")}",
+      "info": "0",
+      "SecondNumber": "${tempVars(\"Amount\")}",
+      "storage": "1",
+      "varName": "Math",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "level",
+      "changeType": "0",
+      "value": "tempVars(\"Math\")",
+      "name": "Control Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Done.**",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
