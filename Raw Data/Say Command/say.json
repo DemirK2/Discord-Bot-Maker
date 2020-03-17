@@ -35,6 +35,12 @@
       "name": "Comment"
     },
     {
+      "info": "19",
+      "storage": "1",
+      "varName2": "Prefix",
+      "name": "Store Bot Client Info"
+    },
+    {
       "condition": "0",
       "comparison": "2",
       "value": "0",
@@ -47,7 +53,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "__**Error:**__\n```\nWrong Command Usage!\n[p]say (Message)\n```",
+      "message": "__**Error:**__\n```\nWrong Command Usage!\n${tempVars(\"Prefix\")}say (Message)\n```",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
@@ -96,5 +102,6 @@
       "varName": "",
       "name": "Delete Message"
     }
-  ]
+  ],
+  "comType": "0"
 }
