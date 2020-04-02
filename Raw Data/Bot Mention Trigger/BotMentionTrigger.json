@@ -35,19 +35,10 @@
       "name": "Comment"
     },
     {
-      "comment": "You should replace \"BotID\" with the ID of your bot (action #11).",
-      "color": "#000000",
-      "name": "Comment"
-    },
-    {
-      "comment": "Example:   \"<@!567341463390781448>\"",
-      "color": "#000000",
-      "name": "Comment"
-    },
-    {
-      "comment": "\"Do not delete the quotes!\"",
-      "color": "#000000",
-      "name": "Comment"
+      "info": "20",
+      "storage": "1",
+      "varName2": "ID",
+      "name": "Store Bot Client Info"
     },
     {
       "message": "0",
@@ -61,7 +52,7 @@
       "storage": "1",
       "varName": "Text",
       "comparison": "1",
-      "value": "\"<@!BotID>\"",
+      "value": "\"<@!\" + tempVars(\"ID\") + \">\"",
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "1",
