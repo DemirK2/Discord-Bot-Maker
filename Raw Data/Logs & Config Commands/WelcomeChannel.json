@@ -1,0 +1,126 @@
+{
+  "name": "welcomechannel",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "Dkqon",
+  "actions": [
+    {
+      "comment": "Made by DemirK2#0001",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Website: www.pokenix.com",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Server: https://discord.gg/STcThtu",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "GitHub: https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Discord Bot Maker: 1.5.10 [Beta]",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "Network Modifications: 1.9.7",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "MANAGE_GUILD",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "__**Error:**__\n```\nYou do not have enough permissions to use this command!\nManage Server\n```",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "19",
+      "storage": "1",
+      "varName2": "Prefix",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "condition": "2",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "__**Error:**__\n```\nWrong Command Usage!\n${tempVars(\"Prefix\")}welcomechannel (#Channel)\n```",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "welcomechannel",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Data",
+      "name": "Store Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "welcomechannel",
+      "changeType": "0",
+      "value": "tempVars(\"ID\")",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Done.**",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0"
+}
