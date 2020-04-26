@@ -47,7 +47,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "__**Error:**__\n```\nYou don't have enough permissions to use this command!\nManage Server\n```",
+      "message": "__**Error:**__\n```\nYou do not have enough permissions to use this command!\nManage Server\n```",
       "storage": "0",
       "varName2": "",
       "iffalse": "1",
