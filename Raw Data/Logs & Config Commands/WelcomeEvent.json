@@ -34,7 +34,7 @@
       "color": "#ffff00",
       "name": "Comment"
     },
-	{
+    {
       "member": "2",
       "varName": "Member",
       "info": "18",
@@ -77,7 +77,7 @@
     {
       "server": "0",
       "varName": "",
-      "info": "2",
+      "info": "5",
       "storage": "1",
       "varName2": "ServerIcon",
       "name": "Store Server Info"
@@ -135,7 +135,7 @@
       "storage": "1",
       "varName": "Embed",
       "fieldName": "__ID__",
-      "message": "${tempVars(\"ID\")}",
+      "message": "```${tempVars(\"ID\")}```",
       "inline": "1",
       "name": "Add Embed Field"
     },
