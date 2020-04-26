@@ -53,9 +53,17 @@
       "name": "Store Member Data"
     },
     {
+      "FirstNumber": "20",
+      "info": "1",
+      "SecondNumber": "${tempVars(\"MemberXP\")}",
+      "storage": "1",
+      "varName": "MathXP",
+      "name": "Basic Math Operation"
+    },
+    {
       "channel": "0",
       "varName": "",
-      "message": "You are level **${tempVars(\"MemberLevel\")}**.\nYou need **${tempVars(\"MemberXP\")}** more XP(s) to level up.",
+      "message": "You are level **${tempVars(\"MemberLevel\")}**.\nYou need **${tempVars(\"MathXP\")}** more XP(s) to level up.",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
