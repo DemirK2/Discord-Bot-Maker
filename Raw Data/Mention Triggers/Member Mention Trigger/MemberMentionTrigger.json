@@ -1,0 +1,150 @@
+{
+    "name": "MemberMentionTrigger",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "gpaKR",
+    "actions": [
+      {
+        "comment": "Made by DemirK2#0001",
+        "color": "#ffff00",
+        "name": "Comment"
+      },
+      {
+        "comment": "https://github.com/DemirK2/Discord-Bot-Maker",
+        "color": "#ffff00",
+        "name": "Comment"
+      },
+      {
+        "message": "0",
+        "varName": "",
+        "info": "2",
+        "storage": "1",
+        "varName2": "MessageText",
+        "name": "Store Message Info"
+      },
+      {
+        "comment": "Change the ID in the 5th action.",
+        "color": "#000000",
+        "name": "Comment"
+      },
+      {
+        "storage": "1",
+        "varName": "ID",
+        "changeType": "0",
+        "value": "\"ID\"",
+        "name": "Control Variable"
+      },
+      {
+        "storage": "1",
+        "varName": "MessageText",
+        "comparison": "1",
+        "value": "\"<@\" + tempVars(\"ID\") + \">\"",
+        "iftrue": "3",
+        "iftrueVal": "1",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check Variable"
+      },
+      {
+        "storage": "1",
+        "varName": "MessageText",
+        "comparison": "1",
+        "value": "\"<@!\" + tempVars(\"ID\") + \">\"",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "1",
+        "iffalseVal": "",
+        "name": "Check Variable"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "21",
+        "storage": "1",
+        "varName2": "MemberTag",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "16",
+        "storage": "1",
+        "varName2": "MemberAvatar",
+        "name": "Store Member Info"
+      },
+      {
+        "info": "0",
+        "find": "${tempVars(\"ID\")}",
+        "storage": "1",
+        "varName": "User",
+        "find2": "0",
+        "iffalse": "1",
+        "iffalseVal": "",
+        "name": "Find Member"
+      },
+      {
+        "member": "2",
+        "varName": "User",
+        "info": "21",
+        "storage": "1",
+        "varName2": "UserTag",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "2",
+        "varName": "User",
+        "info": "16",
+        "storage": "1",
+        "varName2": "UserAvatar",
+        "name": "Store Member Info"
+      },
+      {
+        "title": "Pong!",
+        "author": "${tempVars(\"MemberTag\")}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${tempVars(\"MemberAvatar\")}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "timestamp": "true",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "Embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "message": "${member} pinged ${tempVars(\"User\")}.",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "message": "${tempVars(\"UserTag\")}",
+        "footerIcon": "${tempVars(\"UserAvatar\")}",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "Embed",
+        "channel": "0",
+        "varName2": "",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "1",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      }
+    ],
+    "comType": "3"
+  }
