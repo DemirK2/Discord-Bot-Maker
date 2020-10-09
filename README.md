@@ -11,7 +11,8 @@ You can use these in your bots as you want but giving credits to me would be app
 # Versions
 1. You have to have the Discord Bot Maker which is on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker).
 2. You have to have the latest [DBM Network Modifications](https://github.com/dbm-network/mods#downloads).
-To use the stuff here.
+
+...To use the stuff here.
 
 # Useful Links
 1. [Discord Bot Maker](https://store.steampowered.com/app/682130/Discord_Bot_Maker)
