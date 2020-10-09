@@ -1,0 +1,117 @@
+{
+  "name": "BotMentionTrigger",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "gpaKR",
+  "actions": [
+    {
+      "comment": "Made by DemirK2#0001",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "info": "20",
+      "storage": "1",
+      "varName2": "BotID",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "MessageText",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "MessageText",
+      "comparison": "1",
+      "value": "\"<@\" + tempVars(\"BotID\") + \">\"",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "MessageText",
+      "comparison": "1",
+      "value": "\"<@!\" + tempVars(\"BotID\") + \">\"",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "info": "19",
+      "storage": "1",
+      "varName2": "BotPrefix",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "MemberTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "MemberAvatar",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "Pong!",
+      "author": "${tempVars(\"MemberTag\")}",
+      "color": "RANDOM",
+      "url": "",
+      "authorIcon": "${tempVars(\"MemberAvatar\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "__**Prefix**__\n```\n${tempVars(\"BotPrefix\")}\n```",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "3"
+}
