@@ -1,6 +1,7 @@
 # Discord Bot Maker
 Discord Bot Maker is a software which lets you make your own Discord bots without needing to code.
 You can buy Discord Bot Maker on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker)
+
 ![Discord Bot Maker](https://cdn.cloudflare.steamstatic.com/steam/apps/682130/header.jpg)
 
 # Information
