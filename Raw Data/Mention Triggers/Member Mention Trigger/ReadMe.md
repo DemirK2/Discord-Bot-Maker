@@ -1,5 +1,5 @@
 # Member Mention Trigger
-This command will get triggered when someone mentions the memebr you selected.
+This command will get triggered when someone mentions the member you selected.
 
 # Details
 1. You have to replace `ID` with the ID of the member in the 5th action (Control Variable).
