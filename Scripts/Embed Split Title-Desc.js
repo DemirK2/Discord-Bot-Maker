@@ -15,12 +15,12 @@ let NewText = Text.split(" | ");
 let Title = NewText[0];
 let Description = NewText[1]
 
-// This part converts the "Title" variable and the "Description"
+// This part converts the "Title" variable and the "Description" variable into DBM-variables.
 this.storeValue(Title, 1, "Title", cache);
 this.storeValue(Description, 1, "Description", cache);
 
 /*
-Outputs:
+Outputs (DBM Variables):
 
 Title  =  tempVars("Title")
 Description  =  tempVars("Description")
