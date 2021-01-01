@@ -106,19 +106,16 @@
       "name": "Check Variable"
     },
     {
-      "tosend": "[Money]: Member was not found!",
-      "color": "#ff0000",
-      "name": "Send Message to Console"
+      "member": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "User",
+      "name": "Store Member Info"
     },
     {
-      "channel": "0",
-      "varName": "",
-      "message": "```css\nSomething went wrong!\n```",
-      "storage": "0",
-      "varName2": "",
-      "iffalse": "1",
-      "iffalseVal": "",
-      "name": "Send Message"
+      "count": "1",
+      "name": "Skip Actions"
     },
     {
       "name": "End Action Sequence"
