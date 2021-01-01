@@ -1,0 +1,199 @@
+{
+  "name": "money",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "money",
+  "actions": [
+    {
+      "comment": "https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "MemberTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "MemberAvatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "6",
+      "varName2": "",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "9",
+      "name": "Check If Member"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "4",
+      "iffalse": "3",
+      "iffalseVal": "8",
+      "name": "Check Parameters"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check Parameters"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "User",
+      "name": "Store Command Params"
+    },
+    {
+      "count": "5",
+      "name": "Skip Actions"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "ID",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"ID\")}",
+      "storage": "1",
+      "varName": "User",
+      "find2": "1",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Find Member"
+    },
+    {
+      "count": "1",
+      "name": "Skip Actions"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "User",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "3",
+      "iftrueVal": "3",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "tosend": "[Money]: Member was not found!",
+      "color": "#ff0000",
+      "name": "Send Message to Console"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```css\nSomething went wrong!\n```",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "2",
+      "varName": "User",
+      "info": "21",
+      "storage": "1",
+      "varName2": "UserTag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "User",
+      "info": "16",
+      "storage": "1",
+      "varName2": "UserAvatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "User",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Data",
+      "name": "Store Member Data"
+    },
+    {
+      "title": "Money",
+      "author": "${tempVars(\"UserTag\")}",
+      "color": "#00FF00",
+      "url": "",
+      "authorIcon": "${tempVars(\"UserAvatar\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "```cs\n$${tempVars(\"Data\")}\n```",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "${tempVars(\"MemberTag\")}",
+      "footerIcon": "${tempVars(\"MemberAvatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}

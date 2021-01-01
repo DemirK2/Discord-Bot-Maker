@@ -1,0 +1,185 @@
+{
+  "name": "MoneyLeaderboards",
+  "temp": "",
+  "event-type": "0",
+  "_id": "MoneyLeaderboards",
+  "actions": [
+    {
+      "comment": "https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "LBUser",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "tosend": "[Leaderboards]: Member was not found!",
+      "color": "#ff0000",
+      "name": "Send Message to Console"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ID",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "LBUserData",
+      "name": "Store Member Data"
+    },
+    {
+      "dataName": "money-top-1",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top1",
+      "name": "Store Global Data"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "dataName": "money",
+      "comparison": "4",
+      "value": "tempVars(\"Top1\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Member Data"
+    },
+    {
+      "dataName": "money-top-1-user",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top1User",
+      "name": "Store Global Data"
+    },
+    {
+      "dataName": "money-top-1",
+      "changeType": "0",
+      "value": "tempVars(\"LBUserData\")",
+      "name": "Control Global Data"
+    },
+    {
+      "dataName": "money-top-1-user",
+      "changeType": "0",
+      "value": "tempVars(\"ID\")",
+      "name": "Control Global Data"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "dataName": "money-top-2",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top2",
+      "name": "Store Global Data"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "dataName": "money",
+      "comparison": "4",
+      "value": "tempVars(\"Top2\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Member Data"
+    },
+    {
+      "dataName": "money-top-2-user",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top2User",
+      "name": "Store Global Data"
+    },
+    {
+      "dataName": "money-top-2",
+      "changeType": "0",
+      "value": "tempVars(\"LBUserData\")",
+      "name": "Control Global Data"
+    },
+    {
+      "dataName": "money-top-2-user",
+      "changeType": "0",
+      "value": "tempVars(\"ID\")",
+      "name": "Control Global Data"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "dataName": "money-top-3",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top3",
+      "name": "Store Global Data"
+    },
+    {
+      "member": "2",
+      "varName": "LBUser",
+      "dataName": "money",
+      "comparison": "4",
+      "value": "tempVars(\"Top3\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "4",
+      "name": "Check Member Data"
+    },
+    {
+      "dataName": "money-top-3-user",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top3User",
+      "name": "Store Global Data"
+    },
+    {
+      "dataName": "money-top-3",
+      "changeType": "0",
+      "value": "tempVars(\"LBUserData\")",
+      "name": "Control Global Data"
+    },
+    {
+      "dataName": "money-top-3-user",
+      "changeType": "0",
+      "value": "tempVars(\"ID\")",
+      "name": "Control Global Data"
+    }
+  ]
+}

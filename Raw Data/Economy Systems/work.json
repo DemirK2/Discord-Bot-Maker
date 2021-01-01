@@ -1,0 +1,122 @@
+{
+  "name": "work",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "work",
+  "actions": [
+    {
+      "comment": "https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "Data",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "Number",
+      "min": "1",
+      "max": "10",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "1",
+      "value": "tempVars(\"Number\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "Work",
+      "author": "${tempVars(\"Tag\")}",
+      "color": "#00FF00",
+      "url": "",
+      "authorIcon": "${tempVars(\"Avatar\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "message": "Payout: `$${tempVars(\"Number\")}`\nNew Balance: `$${tempVars(\"Data\") + tempVars(\"Number\")}`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "comment": "Leaderboards",
+      "color": "#ff8040",
+      "name": "Comment"
+    },
+    {
+      "commandName": "MoneyLeaderboards",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check If Command Exists"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "LBUser",
+      "name": "Store Member Info"
+    },
+    {
+      "sourcetype": "1",
+      "source": "work",
+      "source2": "MoneyLeaderboards",
+      "type": "true",
+      "name": "Call Command/Event"
+    }
+  ],
+  "_timeRestriction": 3600
+}
