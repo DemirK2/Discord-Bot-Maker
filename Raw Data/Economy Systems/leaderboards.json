@@ -1,0 +1,134 @@
+{
+  "name": "leaderboards",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "leaderboards",
+  "actions": [
+    {
+      "comment": "https://github.com/DemirK2/Discord-Bot-Maker",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "Tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "Avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "Leaderboards",
+      "author": "${tempVars(\"Tag\")}",
+      "color": "#808000",
+      "url": "",
+      "authorIcon": "${tempVars(\"Avatar\")}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "Embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "dataName": "money-top-1",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top1",
+      "name": "Store Global Data"
+    },
+    {
+      "dataName": "money-top-1-user",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top1User",
+      "name": "Store Global Data"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "#1",
+      "message": "[${tempVars(\"Top1User\")}]\n```cs\n$${tempVars(\"Top1\")}\n```",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "dataName": "money-top-2",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top2",
+      "name": "Store Global Data"
+    },
+    {
+      "dataName": "money-top-2-user",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top2User",
+      "name": "Store Global Data"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "#2",
+      "message": "[${tempVars(\"Top2User\")}]\n```cs\n$${tempVars(\"Top2\")}\n```",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "dataName": "money-top-3",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top3",
+      "name": "Store Global Data"
+    },
+    {
+      "dataName": "money-top-3-user",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName": "Top3User",
+      "name": "Store Global Data"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "fieldName": "#3",
+      "message": "[${tempVars(\"Top3User\")}]\n```cs\n$${tempVars(\"Top3\")}\n```",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "Embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": [
+    "leaderboard",
+    "top",
+    "lb"
+  ]
+}
