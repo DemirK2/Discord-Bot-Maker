@@ -95,14 +95,6 @@
       "name": "Comment"
     },
     {
-      "commandName": "MoneyLeaderboards",
-      "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "1",
-      "iffalseVal": "",
-      "name": "Check If Command Exists"
-    },
-    {
       "member": "1",
       "varName": "",
       "info": "0",
