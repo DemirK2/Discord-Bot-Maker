@@ -5,7 +5,7 @@
   "_id": "isNSFW",
   "actions": [
     {
-      "code": "if (msg.channel.nsfw) {\n    this.storeValue(true, 1, \"isNSFW\", cache);\n} else {\n    this.storeValue(false, 1, \"isNSFW\", cache);\n}",
+      "code": "this.storeValue(msg.channel.nsfw, 1, \"isNSFW\", cache);",
       "behavior": "0",
       "interpretation": "1",
       "storage": "0",
