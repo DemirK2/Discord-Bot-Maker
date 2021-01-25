@@ -1,18 +1,12 @@
 # Discord Bot Maker
-Discord Bot Maker is a software which lets you make your own Discord bots without needing to code.
-You can buy Discord Bot Maker on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker)
+Discord Bot Maker is a software which can be used to make Discord bots without any coding experience/knowledge.
+You can buy Discord Bot Maker on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker).
 
 ![Discord Bot Maker](https://cdn.cloudflare.steamstatic.com/steam/apps/682130/header.jpg)
 
 # Information
-In this repository, you can find some raw data, events, modifications, and extensions which are made by me.
-You can use these in your bots as you want but giving credits to me would be appreciated.
-
-# Versions
-1. You have to have the Discord Bot Maker which is on [Steam](https://store.steampowered.com/app/682130/Discord_Bot_Maker).
-2. You have to have the latest [DBM Network Modifications](https://github.com/dbm-network/mods#downloads).
-
-...To use the stuff here.
+You can find raw data, events triggers, modifications, and extensions in this repository that can be used in Discord Bot Maker.
+You can use these stuff in your bots as you want but giving credits would be appreciated.
 
 # Useful Links
 1. [Discord Bot Maker](https://store.steampowered.com/app/682130/Discord_Bot_Maker)
